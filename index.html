@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Icono -->
+    <link rel="shortcut icon" href="image/imaginedragons-logo.ico" type="image/x-icon">
+    <title>Imagine Dragons</title>
+    <!-- Css -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <!-- Iconos Fontawesome -->
+    <script src="https://kit.fontawesome.com/7e46f44fbf.js" crossorigin="anonymous"></script>
+    <!-- Animaciones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="tituloImaginedragons">
+            <a href="index.html"><img src="./image/id-logoblanco.png" alt="Logo Imagine Dragons"></a>
+        </div>
+        <!-- Nav -->
+        <nav class="menuPrincipal">
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="pages/tour.html">TOUR</a></li>
+                <li><a href="pages/discografia.html">DISCOGRAFÍA</a></li>
+                <li><a href="pages/tienda.html">TIENDA</a></li>
+                <li><a href="pages/contacto.html">NOSOTROS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="mainIndex">
+        <!-- Imagen futuro carrusel -->
+        <div class="imagenCarrusel">
+            <img src="./image/id-carrusel1.jpg" alt="imagine dragons sharks">
+        </div>
+        <!-- Section 1 -->
+        <section class="sectionAlbums">
+            <div class="cajaAlbum1">
+                <div class="album1 animate__animated animate__fadeInLeft">
+                    <img src="./image/album-mercury.jpg" alt="album mercury act 1 y 2">
+                </div>
+                <div class="albumTexto animate__animated animate__fadeInRight">
+                    <h3>¡MERCURY!</h3>
+                    <h4>ACTO 1 & 2</h4>
+                </div>
+            </div>
+            <div class="cajaAlbum2">
+                <div class="album2 animate__animated animate__fadeInLeft">
+                    <img src="./image/album-mercury-act1.jpg" alt="album mercury act 1">
+                </div>
+                <div class="albumTexto animate__animated animate__fadeInRight">
+                    <h3>¡MERCURY!</h3>
+                    <h4>ACTO 1</h4>
+                </div>
+            </div>
+        </section>
+        <!-- Section 2 -->
+        <section class="merchIndex">
+            <div class="merchTitulo">
+                <h2>¡Oficial Merch!</h2>
+            </div>
+            <div class="cajaMerch1">
+                <div>
+                    <img class="animate__animated animate__pulse" src="./image/merch-remera1.png" alt="remera bones">
+                </div>
+                <div>
+                    <img class="animate__animated animate__pulse" src="./image/merch-disco1.png" alt="cd night visions">
+                </div>
+                <div>
+                    <img class="animate__animated animate__pulse" src="./image/merch-remera2.png" alt="cd night visions">
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Formulario -->
+    <fieldset class="formulario">
+        <h3>SUSCRIBITE Y ENTERATE DE TODAS LAS NOVEDADES</h3>
+        <form action="">
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre">
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" name="correo">
+            <label for="pais">Elegí tu región:</label>
+            <!-- Menú desplegable -->
+            <select name="pais" id="">
+                <option value="NA">Norte América</option>
+                <option value="SA">Sur América</option>
+                <option value="EU">Europa</option>
+                <option value="AS">Asia</option>
+            </select>
+            <!-- Checkbox -->
+            <div class="checkbox">
+                <input type="checkbox" value="1" name="terminos">He leído y entiendo la política de privacidad y cookies
+                y acepto el procesamiento de mis datos y el uso de cookies de acuerdo con ella. <p>Entiendo que los
+                    correos
+                    electrónicos serán enviados por o en nombre de Universal Music Group 2220 Colorado Avenue, Santa
+                    Monica.</p>
+            </div>
+            <!-- Botón -->
+            <div class="boton">
+                <input type="submit" value="¡SUSCRIBETE!">
+            </div>
+        </form>
+    </fieldset>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="redesSociales">
+            <ul>
+                <li><a href="https://www.facebook.com/ImagineDragons/" target="_blank"><i
+                            class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="https://twitter.com/Imaginedragons" target="_blank"><i
+                            class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li><a href="https://www.instagram.com/imaginedragons/" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://open.spotify.com/artist/53XhwfbYqKCa1cC15pYq2q?autoplay=true&v=A"
+                        target="_blank"><i class="fa-brands fa-spotify"></i></a></li>
+                <li><a href="https://itunes.apple.com/us/artist/imagine-dragons/358714030?ign-gact=3&ls=1"
+                        target="_blank"><i class="fa-brands fa-itunes-note"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UCT9zcQNlyht7fRlcjmflRSA" target="_blank"><i
+                            class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <p>Derechos reservados a Imagine Dragons/Universal Music Group/Interscope Records</p>
+        </div>
+    </footer>
+</body>
+
+</html>

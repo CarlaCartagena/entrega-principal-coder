@@ -1,0 +1,884 @@
+/* Colores principales 
+Negro = #000000
+Blanco = #FFFFFF
+Bordo Oscuro = #630A10
+Bordo Claro = #911F27
+Beige Claro = #FCF0C8
+Beige Oscuro = #FACE7F
+*/
+
+/* Quita padding, margin*/
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+/* Colores y texto general */
+a {
+  color: #000000;
+}
+
+a:hover {
+  color: #ca2f2f;
+}
+
+body {
+  background-color: #630a10;
+  font-family: "Lato", sans-serif;
+}
+
+p {
+  color: #ffffff;
+}
+/* REM */
+html {
+  font-size: 62, 5%;
+}
+
+/*! INDEX */
+
+/*? HEADER - Index*/
+
+.header {
+  display: flex;
+  background-color: #911f27;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  flex-direction: column;
+}
+
+.tituloImaginedragons {
+  text-align: center;
+  padding: 1rem;
+}
+
+.menuPrincipal {
+  background-color: #face7f;
+  text-align: center;
+}
+
+.menuPrincipal ul li {
+  list-style: none;
+  font-weight: 700;
+  display: inline-block;
+  font-size: 13px;
+  margin-right: 16px;
+  padding: 9px;
+}
+
+/*? MAIN - Index */
+
+.mainIndex {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "imagenCarrusel"
+    "sectionAlbums"
+    "merch";
+
+  color: #ffffff;
+  grid-area: main;
+}
+
+.imagenCarrusel img {
+  width: 100%;
+  grid-area: imagenCarrusel;
+}
+
+/* SECTION 1 - Index */
+
+.sectionAlbums {
+  grid-area: sectionAlbums;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  grid-template-areas:
+    "cajaAlbum1"
+    "cajaAlbum2";
+}
+
+.album1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.album2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.albumTexto {
+  text-align: center;
+  font-size: 50px;
+  padding: 80px;
+  margin: 2px;
+}
+
+.cajaAlbum1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 12px;
+  grid-area: cajaAlbum1;
+}
+.cajaAlbum2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  grid-area: cajaAlbum2;
+}
+
+/* SECTION 2 - Index */
+
+.merchIndex {
+  display: grid;
+  grid-template-columns: 1.5fr;
+  grid-template-rows: 0.1fr 0.2fr;
+  grid-template-areas:
+    "merchTitulo"
+    "cajaMerch1";
+  grid-area: merch;
+}
+
+.merchTitulo {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  font-size: 35px;
+  grid-area: merchTitulo;
+}
+.cajaMerch1 {
+  display: flex;
+  justify-content: center;
+  grid-area: cajaMerch1;
+}
+
+/*? FORMULARIO - Index */
+
+.formulario {
+  font-size: 1.2rem;
+  padding: 1rem;
+  grid-area: formulario;
+}
+
+fieldset {
+  background-color: #630a10;
+  border: none;
+  padding: 1rem;
+}
+
+fieldset h3 {
+  text-align: center;
+  font-size: 130%;
+  margin: 5px;
+  padding-bottom: 4px;
+  color: #ffffff;
+}
+
+form {
+  text-align: center;
+  color: #ffffff;
+}
+
+.checkbox {
+  padding: 10px;
+}
+
+.checkbox p {
+  display: flex;
+  justify-content: center;
+}
+.boton input {
+  display: inline-block;
+  padding: 10px;
+  background-color: #ca2f2f;
+}
+.boton input:hover {
+  background-color: #face7f;
+}
+
+/*? FOOTER */
+
+.footer {
+  background-color: #fcf0c8;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer ul {
+  display: flex;
+}
+
+.footer ul li {
+  list-style-type: none;
+  margin-top: 10px;
+  margin-left: 15px;
+  padding-right: 1rem;
+}
+
+i {
+  font-size: 1.2rem;
+}
+
+.footer p {
+  color: #000000;
+  display: inline-block;
+  text-align: center;
+  padding: 1rem;
+}
+
+/*! PÁGINA TOUR */
+
+.sectionTour {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  margin: 0.5rem;
+  grid-template-areas:
+    "tituloTour"
+    "tourCajas1"
+    "tourCajas2"
+    "tourCajas3"
+    "tourCajas4"
+    "tourCajas5";
+}
+
+.cajaGlobal {
+  display: flex;
+  padding: 10px;
+}
+
+.tituloTour h2 {
+  color: #ffffff;
+  text-align: center;
+  font-size: 180%;
+  padding: 1rem;
+  grid-area: tituloTour;
+}
+.tourCajas1 {
+  grid-area: tourCajas1;
+}
+.tourCajas2 {
+  grid-area: tourCajas2;
+}
+.tourCajas3 {
+  grid-area: tourCajas3;
+}
+.tourCajas4 {
+  grid-area: tourCajas4;
+}
+.tourCajas5 {
+  grid-area: tourCajas5;
+}
+
+.cajaNegra1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  width: 180px;
+  height: 95px;
+}
+.cajaBlanca1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 15px;
+  justify-content: space-between;
+  background-color: #ffffff;
+  width: 800px;
+  height: 95px;
+}
+.cajaBlanca1 p {
+  text-align: right;
+  color: #000000;
+}
+
+/* Boton Caja 1 */
+.cajaBlanca1 button {
+  padding: 10px;
+  margin-right: 1rem;
+  background-color: #000000;
+  color: #fcf0c8;
+  border: none;
+}
+.cajaBlanca1 button:hover {
+  background-color: #ca2f2f;
+}
+
+/*! PÁGINA DISCOGRAFÍA */
+
+/* Section 1 */
+.colorDiscografia {
+  background-color: #141414;
+}
+.sectionDisco {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  grid-template-areas: "discoMercury";
+}
+
+.discoMercury {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 35px;
+  grid-area: discoMercury;
+}
+
+.discoTexto {
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.4rem;
+  padding: 2rem;
+  margin-left: 1.2rem;
+}
+
+.discoTexto button {
+  font-size: 16px;
+  padding: 10px;
+  margin: 0.8rem;
+  width: 150px;
+  height: 45px;
+  background-color: #face7f;
+  border: none;
+  border-radius: 12px;
+}
+
+.discoTexto button:hover {
+  background-color: #fcf0c8;
+}
+
+/* Section 2 */
+
+.sectionVideos {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-items: center;
+  grid-template-areas:
+    "cajaVideo1"
+    "cajaVideo2"
+    "cajaVideo3";
+}
+
+.cajaVideo1 {
+  grid-area: cajaVideo1;
+}
+.cajaVideo2 {
+  display: flex;
+  flex-direction: row-reverse;
+  grid-area: cajaVideo2;
+}
+.cajaVideo3 {
+  grid-area: cajaVideo3;
+}
+
+.cajaD {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  margin: 0.4rem;
+}
+
+.textoVideos {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2rem;
+  padding: 2rem;
+  margin-left: 1rem;
+}
+
+.imagenesVideos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 35px;
+
+  filter: grayscale(100%)
+}
+
+.textoVideos button {
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-right: 1rem;
+  width: 150px;
+  height: 45px;
+  background-color: #630a10;
+  border: none;
+  border-radius: 12px;
+}
+
+.textoVideos button:hover {
+  background-color: #ca2f2f;
+}
+
+.textoVideos a {
+  color: #ffffff;
+}
+
+/*! PÁGINA TIENDA */
+
+/* Section 1 - albums */
+
+.tiendaAlbums {
+  display: grid;
+  grid-template-columns: 1.5fr;
+  grid-template-rows: 0.2fr 1fr;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "tituloAlbum"
+    "cajaTienda1";
+}
+
+.cajaTienda1 {
+  display: flex;
+  justify-content: center;
+  grid-area: cajaTienda1;
+}
+
+.tiendaAlbums h2 {
+  color: #ffffff;
+  text-align: center;
+  margin: 2rem;
+  padding: 1rem;
+  font-size: 4.5rem;
+  grid-area: tituloAlbum;
+}
+
+.cajaTienda1,
+.cajaTienda2 h3 {
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+/* Section 2 - merch  */
+
+.tiendaMerch {
+  display: grid;
+  grid-template-columns: 1.5fr;
+  grid-template-rows: 0.2fr 1fr 0.2fr;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "tituloMerch"
+    "cajaTienda2";
+}
+
+.cajaTienda2 {
+  display: flex;
+  justify-content: center;
+  grid-area: cajaTienda2;
+}
+
+.tiendaMerch h2 {
+  color: #ffffff;
+  text-align: center;
+  margin: 2rem;
+  padding: 1rem;
+  font-size: 4.1rem;
+  grid-area: tituloMerch;
+}
+
+/*! PÁGINA CONTACTO */
+
+.mainContacto {
+  background-image: url(../image/fotografia-banda3-bw.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+/* Section 1 */
+
+.sectionHistoria {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr 1fr;
+  grid-template-areas:
+    "tituloHistoria"
+    "historia";
+}
+
+.sectionHistoria h2 {
+  display: flex;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.788) 0%, rgba(255,255,255,0) 100%);
+  color: #ffffff;
+  justify-content: center;
+  width: 720px;
+  padding: 2rem;
+  font-size: 3.6rem;
+  margin-top: 1rem;
+  grid-area: tituloHistoria;
+}
+
+.historia {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+  text-align: justify;
+  width: 720px;
+  padding: 0 2rem 2rem 2rem;
+  grid-area: historia;
+}
+
+.historia p {
+  padding-top: 1rem;
+  font-size: 1.1rem;
+}
+
+/* Section 2 */
+
+.sectionNosotros {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 0.1fr;
+  grid-template-areas:
+    "cajaImagenes1"
+    "nombreBanda";
+}
+
+.cajaImagenes1 {
+  display: flex;
+  grid-area: cajaImagenes1;
+}
+
+.imagenesBanda {
+  display: flex;
+  height: 420px;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.nombreBanda {
+  display: flex;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 1rem;
+  justify-content: space-around;
+  grid-area: nombreBanda;
+}
+
+/*! Animaciones */
+
+/*? Animaciones a botones discografía*/
+
+.animacion{
+  transition: all 0.2s ease-in-out;
+}
+.animacion:hover{
+  transform: scale(1.2);
+}
+
+.anifoto{
+  filter: grayscale(100%)
+}
+
+.anifoto:hover{
+  animation: gris 3s ease-in-out infinite;
+}
+
+@keyframes gris{
+  0%{
+    filter: grayscale(0%);
+  }
+  25%{
+    filter: grayscale(50%);
+  }
+  50%{
+    filter: grayscale(100%);
+  }
+  75%{
+    filter: grayscale(50%)
+  }
+  100%{
+    filter: grayscale(0%);
+  }
+}
+
+
+/*TODO  media queires - TABLET 768px */
+
+/*? Index */
+
+@media (max-width: 768px) {
+  .imagenCarrusel {
+    max-width: 170%;
+    width: 768px;
+  }
+  .merchIndex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .sectionAlbums {
+    display: grid;
+    justify-items: start;
+  }
+  .cajaAlbum1 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 6rem;
+  }
+  .cajaAlbum2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 6rem;
+  }
+  .merchTitulo {
+    margin-left: 10rem;
+  }
+  .cajaMerch1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 10rem;
+  }
+
+  /*? TOUR */
+
+  .cajaBlanca1 {
+    width: 500px;
+  }
+
+  /*? DISCOGRAFIA */
+
+  .discoMercury {
+    margin-left: 20px;
+  }
+
+  /*? TIENDA */
+
+  .tiendaAlbums {
+    display: grid;
+    justify-items: start;
+    margin-left: 4rem;
+  }
+  .tiendaMerch {
+    display: grid;
+    justify-items: start;
+    margin-left: 7rem;
+  }
+  .cajaTienda1 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 7rem;
+  }
+  .cajaTienda2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3rem;
+  }
+
+  /*? Nosotros */
+
+  .sectionHistoria h2{
+    width: 580px;
+  }
+  .historia {
+    width: 580px;
+  }
+  .imagenesBanda {
+    height: 230px;
+  }
+  .imagenesBanda img {
+    max-width: 231px;
+    max-height: 232px;
+  }
+  .nombreBanda {
+    font-size: 13px;
+  }
+  .cajaImagenes1 {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
+
+/*TODO media queires - Celular 425px  */
+
+@media (max-width: 425px) {
+  .imagenCarrusel {
+    width: 100%;
+  }
+  .menuPrincipal {
+    display: flex;
+  }
+  .albumTexto {
+    padding: 20px;
+    font-size: 20px;
+  }
+  .tituloImaginedragons img {
+    width: 350px;
+  }
+  .cajaAlbum1 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+  }
+  .cajaAlbum1 img {
+    width: 90%;
+    align-self: center;
+  }
+  .cajaAlbum2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+  }
+  .cajaAlbum2 img {
+    width: 325px;
+  }
+  .cajaMerch1 {
+    margin-left: 0px;
+  }
+  .cajaMerch1 img {
+    width: 340px;
+    margin-left: 45px;
+  }
+  .merchTitulo {
+    margin-left: 2.8rem;
+  }
+
+  /*? TOUR */
+
+  .cajaBlanca1 {
+    width: 194px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .cajaBlanca1 p {
+    font-size: 13px;
+  }
+
+  /*? Discografia */
+
+  .discoMercury {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .discoMercury img {
+    width: 332px;
+  }
+  .cajaVideo1 {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+  }
+  .imagenesVideos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .imagenesVideos img {
+    width: 364px;
+    margin-left: -4px;
+  }
+  .textoVideos {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    font-size: 30px;
+    margin-left: -2rem;
+  }
+  .cajaD {
+    flex-direction: column-reverse;
+  }
+
+  /*?TIENDA */
+
+  .cajaTienda1 {
+    display: flex;
+    margin-left: -3rem;
+    flex-direction: column;
+  }
+  .tiendaAlbums h2 {
+    text-align: center;
+    margin-left: -4rem;
+    padding: 1rem;
+    font-size: 3rem;
+  }
+  .cajaTienda1 img {
+    flex-direction: column;
+    width: 310px;
+  }
+  .cajaTienda1 h3 {
+    font-size: 20px;
+  }
+  .cajaTienda2 {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .cajaTienda2 img {
+    width: 300px;
+    margin-left: -128px;
+    padding: 1rem;
+  }
+  .cajaTienda2 h3 {
+    font-size: 20px;
+    margin-left: -100px;
+  }
+  .tiendaMerch h2 {
+    text-align: center;
+    margin-left: -8rem;
+    padding: 4rem;
+    font-size: 2.5rem;
+  }
+
+  /*? Nosotros */
+
+  .sectionHistoria {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .sectionHistoria h2 {
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 40px;
+  }
+  .imagenesBanda {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    margin-top: 240px;
+  }
+  .imagenesBanda img {
+    width: 180px;
+  }
+  .nombreBanda {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  /*? Footer */
+
+  .footer {
+    flex-direction: column;
+  }
+  .footer ul {
+    padding: 10px;
+  }
+  .footer p {
+    padding: 0;
+    font-size: 15px;
+  }
+}
