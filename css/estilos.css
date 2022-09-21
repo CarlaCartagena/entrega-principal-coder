@@ -680,9 +680,9 @@ i {
 /*TODO  media queires - TABLET 768px */
 
 /*? Index */
-
-@media (max-width: 768px) {
-  .imagenCarrusel {
+/* 
+@media (max-width: 768px) { */
+ /*  .imagenCarrusel {
     max-width: 170%;
     width: 768px;
   }
@@ -713,21 +713,21 @@ i {
     flex-direction: column;
     margin-left: 10rem;
   }
-
+ */
   /*? TOUR */
-
+/* 
   .cajaBlanca1 {
     width: 500px;
-  }
+  } */
 
   /*? DISCOGRAFIA */
-
+/* 
   .discoMercury {
     margin-left: 20px;
-  }
+  } */
 
   /*? TIENDA */
-
+/* 
   .tiendaAlbums {
     display: grid;
     justify-items: start;
@@ -736,7 +736,6 @@ i {
   .tiendaMerch {
     display: grid;
     justify-items: start;
-    margin-left: 7rem;
   }
   .cajaTienda1 {
     display: flex;
@@ -748,9 +747,9 @@ i {
     flex-direction: column;
     margin-left: 3rem;
   }
-
+ */
   /*? Nosotros */
-
+/* 
   .sectionHistoria h2{
     width: 580px;
   }
@@ -772,49 +771,56 @@ i {
     flex-direction: column;
   }
 }
+ */
+
 
 /*TODO media queires - Celular 425px  */
 
 @media (max-width: 425px) {
-  .imagenCarrusel {
-    width: 100%;
+
+  /* Nav */
+  .navbar img {
+    width: 70%;
+    justify-content: center;
   }
-  .menuPrincipal {
+
+  .navbar-brand{
+    display: flex;
+    justify-content: center;
+  }
+
+  /*? Index */
+
+  /* Section 2 */
+
+  .sectionAlbums{
     display: flex;
   }
-  .albumTexto {
-    padding: 20px;
-    font-size: 20px;
-  }
-  .tituloImaginedragons img {
-    width: 350px;
-  }
-  .cajaAlbum1 {
-    display: flex;
-    flex-direction: column;
-    margin-left: 1rem;
-  }
-  .cajaAlbum1 img {
-    width: 90%;
-    align-self: center;
-  }
-  .cajaAlbum2 {
-    display: flex;
-    flex-direction: column;
-    margin-left: 1rem;
-  }
-  .cajaAlbum2 img {
-    width: 325px;
-  }
+
   .cajaMerch1 {
-    margin-left: 0px;
+    margin-left: 1rem;
+    flex-direction: column;
   }
+
   .cajaMerch1 img {
-    width: 340px;
-    margin-left: 45px;
+    width: 70%;
+    margin-left: 3rem;
   }
-  .merchTitulo {
-    margin-left: 2.8rem;
+
+  .merchTitulo h2 {
+    font-size: 200%;
+    margin-left: 0;
+  }
+
+  /* Formulario */
+
+  label {
+    display: block;
+  }
+
+  .checkbox {
+    padding: 20px;
+    width: 100%;
   }
 
   /*? TOUR */
@@ -855,11 +861,10 @@ i {
     margin-left: -4px;
   }
   .textoVideos {
-    align-items: flex-start;
-    flex-wrap: wrap;
-    font-size: 30px;
-    margin-left: -2rem;
+    justify-content: center;
+    align-items: center;
   }
+
   .cajaD {
     flex-direction: column-reverse;
   }
@@ -871,40 +876,41 @@ i {
     margin-left: -3rem;
     flex-direction: column;
   }
+
+
   .tiendaAlbums h2 {
     text-align: center;
-    margin-left: -4rem;
-    padding: 1rem;
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
+
   .cajaTienda1 img {
     flex-direction: column;
-    width: 310px;
+    width: 70%;
   }
-  .cajaTienda1 h3 {
-    font-size: 20px;
-  }
+
   .cajaTienda2 {
     flex-direction: column;
     flex-wrap: wrap;
   }
+
   .cajaTienda2 img {
-    width: 300px;
-    margin-left: -128px;
-    padding: 1rem;
+    flex-direction: column;
+    width: 70%;
+    margin-left: 4rem;
   }
-  .cajaTienda2 h3 {
-    font-size: 20px;
-    margin-left: -100px;
-  }
+
   .tiendaMerch h2 {
     text-align: center;
-    margin-left: -8rem;
-    padding: 4rem;
-    font-size: 2.5rem;
+    padding: 1rem;
+    font-size: 3rem;
   }
 
   /*? Nosotros */
+
+  .mainContacto {
+    background-image: none;
+    background-color: #2c2c2c;
+  }
 
   .sectionHistoria {
     display: flex;
@@ -941,6 +947,6 @@ i {
   }
   .footer p {
     padding: 0;
-    font-size: 15px;
+    width: 15rem;
   }
 }
