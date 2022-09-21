@@ -8,6 +8,9 @@
     <!-- Icono -->
     <link rel="shortcut icon" href="image/imaginedragons-logo.ico" type="image/x-icon">
     <title>Imagine Dragons</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <!-- Css -->
     <link rel="stylesheet" href="css/estilos.css">
     <!-- Google Fonts -->
@@ -21,46 +24,130 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="tituloImaginedragons">
-            <a href="index.html"><img src="./image/id-logoblanco.png" alt="Logo Imagine Dragons"></a>
-        </div>
-        <!-- Nav -->
-        <nav class="menuPrincipal">
-            <ul>
-                <li><a href="index.html">INICIO</a></li>
-                <li><a href="pages/tour.html">TOUR</a></li>
-                <li><a href="pages/discografia.html">DISCOGRAFÍA</a></li>
-                <li><a href="pages/tienda.html">TIENDA</a></li>
-                <li><a href="pages/contacto.html">NOSOTROS</a></li>
-            </ul>
+    <!-- Navbar bootstrap -->
+    <div class="sticky-top">
+        <nav class="navbar navbar-expand-lg bg-bordo">
+            <div class="container-fluid flex-column">
+                <a class="navbar-brand" href="#"><img src="./image/id-logoblanco.png" alt="Logo Imagine Dragons"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse bg-beige" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 col-12">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/tour.html">TOUR</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/discografia.html">DISCOGRAFIA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/tienda.html">TIENDA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contacto.html">NOSOTROS</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
+    </div>
+    <!-- Carrusel -->
+    <header>
+        <div>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./image/id-carrusel1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./image/id-carrusel2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./image/id-carrusel3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
     </header>
     <main class="mainIndex">
-        <!-- Imagen futuro carrusel -->
-        <div class="imagenCarrusel">
-            <img src="./image/id-carrusel1.jpg" alt="imagine dragons sharks">
-        </div>
-        <!-- Section 1 -->
+         <!-- Section tour index -->
+         <section class="sectionTour-i container-fluid">
+            <div>
+                <h2 class="text-center mt-4 mb-4">TOUR FECHAS</h2>
+            </div>
+            <div class="row justify-content-evenly">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">SEPTIEMBRE 14</h5>
+                        <p class="card-text">Los Angeles, USA</p>
+                        <a href="./pages/tour.html" class="btn btn-primary">VER MÁS</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">OCTUBRE 18</h5>
+                        <p class="card-text">Bogotá, COLOMBIA</p>
+                        <a href="./pages/tour.html" class="btn btn-primary">VER MÁS</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">OCTUBRE 21</h5>
+                        <p class="card-text">Santiago, CHILE</p>
+                        <a href="./pages/tour.html" class="btn btn-primary">VER MÁS</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section 2 -->
         <section class="sectionAlbums">
-            <div class="cajaAlbum1">
-                <div class="album1 animate__animated animate__fadeInLeft">
-                    <img src="./image/album-mercury.jpg" alt="album mercury act 1 y 2">
-                </div>
-                <div class="albumTexto animate__animated animate__fadeInRight">
-                    <h3>¡MERCURY!</h3>
-                    <h4>ACTO 1 & 2</h4>
+            <div>
+                <h2 class="text-center mt-4 mb-4">ÚLTIMOS ALBUMS</h2>
+            </div>
+            <div class="card" style="max-width: 55%;">
+                <div class="row g-0 align-items-center">
+                    <div class="col-md-7">
+                        <img src="./image/album-mercury.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card-body">
+                            <h3 class="card-title">Mercury act 1&2</h3>
+                            <p class="card-text text-center">Mercury Acts 1 & 2 es un álbum recopilatorio que incluye Mercury Act 1, lanzado el 1 de julio de 2022</p>
+                            <button type="button" class="btn btn-outline-light"><a class="textoBoton" href="./pages/discografia.html">Conocer más</a></button>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="cajaAlbum2">
-                <div class="album2 animate__animated animate__fadeInLeft">
-                    <img src="./image/album-mercury-act1.jpg" alt="album mercury act 1">
-                </div>
-                <div class="albumTexto animate__animated animate__fadeInRight">
-                    <h3>¡MERCURY!</h3>
-                    <h4>ACTO 1</h4>
+            <div class="card" style="max-width: 55%;">
+                <div class="row g-0 align-items-center">
+                    <div class="col-md-7">
+                        <img src="./image/album-mercury-act1.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card-body">
+                            <h2 class="card-title">Mercury act 1</h2>
+                            <p class="card-text text-center">Mercury Acto 1, es el quinto álbum de la banda estadounidense de pop rock Imagine Dragons, lanzado el 3 de septiembre de 2021</p>
+                            <button type="button" class="btn btn-outline-light"><a class="textoBoton" href="./pages/discografia.html">Conocer más</a></button>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div>
         </section>
         <!-- Section 2 -->
         <section class="merchIndex">
@@ -133,6 +220,10 @@
             <p>Derechos reservados a Imagine Dragons/Universal Music Group/Interscope Records</p>
         </div>
     </footer>
+     <!-- JavaScript Bootstrap -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+     crossorigin="anonymous"></script>
 </body>
 
 </html>

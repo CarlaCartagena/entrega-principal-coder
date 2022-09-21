@@ -17,6 +17,7 @@ Beige Oscuro = #FACE7F
 /* Colores y texto general */
 a {
   color: #000000;
+  text-decoration: none;
 }
 
 a:hover {
@@ -24,7 +25,8 @@ a:hover {
 }
 
 body {
-  background-color: #630a10;
+  background-image: url(../image/background-op-2.jpg);
+ /*  background-color: #630a10; */
   font-family: "Lato", sans-serif;
 }
 
@@ -40,41 +42,51 @@ html {
 
 /*? HEADER - Index*/
 
-.header {
-  display: flex;
-  background-color: #911f27;
-  position: sticky;
-  z-index: 1;
-  top: 0;
-  flex-direction: column;
+.navbar img{
+  max-width: 100%;
 }
 
-.tituloImaginedragons {
-  text-align: center;
-  padding: 1rem;
-}
-
-.menuPrincipal {
+.bg-beige{
   background-color: #face7f;
+  width: 100%;
   text-align: center;
 }
 
-.menuPrincipal ul li {
-  list-style: none;
-  font-weight: 700;
-  display: inline-block;
-  font-size: 13px;
-  margin-right: 16px;
-  padding: 9px;
+.bg-bordo{
+  background-image: url(../image/background-op-2.jpg);
+  /* background-color: #911f27; */
+}
+
+.nav-link{
+  color: #000000;
+}
+
+.nav-link:hover{
+  color: #ca2f2f;
+}
+
+.navbar{
+  padding: 0;
+}
+
+.navbar-nav{
+  align-items: center;
+  justify-content: center;
+}
+.container-fluid{
+  --bs-gutter-x: 0;
 }
 
 /*? MAIN - Index */
+
+/* Section tour index */
 
 .mainIndex {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas:
     "imagenCarrusel"
+    "tourpreview"
     "sectionAlbums"
     "merch";
 
@@ -82,57 +94,60 @@ html {
   grid-area: main;
 }
 
-.imagenCarrusel img {
-  width: 100%;
-  grid-area: imagenCarrusel;
+.sectionTour-i{
+  background-image: url(../image/background-op-5.jpg);
+  background-repeat: no-repeat;
+  grid-area: tourpreview;
+}
+
+.card{
+  background-color: #414141;
+  margin-bottom: 3rem;
+}
+
+.card-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.row{
+  margin: 0;
+}
+
+.btn-primary{
+  background-color: #ca2f2f;
+  border: none;
+  --bs-btn-hover-bg: #911f27;
 }
 
 /* SECTION 1 - Index */
 
-.sectionAlbums {
+.sectionAlbums{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
   grid-area: sectionAlbums;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
-  justify-items: center;
-  grid-template-areas:
-    "cajaAlbum1"
-    "cajaAlbum2";
 }
 
-.album1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.card{
+  border: none;
 }
 
-.album2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.card-text{
+  text-decoration: none;
+  margin-bottom: 1rem;
 }
 
-.albumTexto {
-  text-align: center;
-  font-size: 50px;
-  padding: 80px;
-  margin: 2px;
+.btn-outline-light{
+  background-color: #d3d1d1;
+  color: #000000;
+  border: none;
 }
-
-.cajaAlbum1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin: 12px;
-  grid-area: cajaAlbum1;
-}
-.cajaAlbum2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  grid-area: cajaAlbum2;
+.textoBoton:hover{
+  color: #ca2f2f;
 }
 
 /* SECTION 2 - Index */
@@ -157,7 +172,15 @@ html {
 .cajaMerch1 {
   display: flex;
   justify-content: center;
+  margin-bottom: 2rem;
   grid-area: cajaMerch1;
+}
+
+.cajaMerch1 img{
+  background-image: url(../image/background-op-5.jpg);
+  border-radius: 1rem;
+  border: solid 5px #ffffff;
+  margin: 1.5rem;
 }
 
 /*? FORMULARIO - Index */
@@ -169,7 +192,9 @@ html {
 }
 
 fieldset {
-  background-color: #630a10;
+  background-image: url(../image/background-op-5.jpg);
+  background-repeat: no-repeat;
+/*   background-color: #630a10; */
   border: none;
   padding: 1rem;
 }
@@ -320,7 +345,8 @@ i {
 
 /* Section 1 */
 .colorDiscografia {
-  background-color: #141414;
+  background-image: url(../image/background-op-5.jpg);
+  /* background-color: #141414; */
 }
 .sectionDisco {
   display: grid;
@@ -361,6 +387,27 @@ i {
 .discoTexto button:hover {
   background-color: #fcf0c8;
 }
+
+/* Section cartas albums */
+
+.card-img, .card-img-top{
+  padding: 1rem;
+}
+
+.card{
+  background-color: #0000009f;
+  border-radius: 6px;
+}
+
+.card-img, .card-img-top {
+  padding: 1rem;
+  border-radius: 25px;
+}
+
+.card, .colorParrafo p{
+  color: #ffffff;
+}
+
 
 /* Section 2 */
 
