@@ -166,9 +166,13 @@ html {
   display: flex;
   justify-content: center;
   align-self: center;
-  font-size: 35px;
   grid-area: merchTitulo;
 }
+
+.merchTitulo h2{
+  font-size: 280%;
+}
+
 .cajaMerch1 {
   display: flex;
   justify-content: center;
@@ -285,7 +289,7 @@ i {
 .tituloTour h2 {
   color: #ffffff;
   text-align: center;
-  font-size: 180%;
+  font-size: 280%;
   padding: 1rem;
   grid-area: tituloTour;
 }
@@ -303,6 +307,14 @@ i {
 }
 .tourCajas5 {
   grid-area: tourCajas5;
+}
+
+.cajaNegra1 p{
+  margin-bottom: 0;
+}
+
+.cajaBlanca1 p{
+  margin-bottom: 0;
 }
 
 .cajaNegra1 {
@@ -364,6 +376,9 @@ i {
   padding-top: 35px;
   grid-area: discoMercury;
 }
+.mercuryDiscografia img{
+  border-radius: 9px;
+}
 
 .discoTexto {
   color: #ffffff;
@@ -374,10 +389,10 @@ i {
 }
 
 .discoTexto button {
-  font-size: 16px;
+  font-size: 1rem;
   padding: 10px;
   margin: 0.8rem;
-  width: 150px;
+  width: 165px;
   height: 45px;
   background-color: #face7f;
   border: none;
