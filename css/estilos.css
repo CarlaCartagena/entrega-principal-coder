@@ -356,7 +356,7 @@ i {
 /*! PÁGINA DISCOGRAFÍA */
 
 /* Section 1 */
-.colorDiscografia {
+.colorGris {
   background-image: url(../image/background-op-5.jpg);
   /* background-color: #141414; */
 }
@@ -574,7 +574,6 @@ i {
   display: grid;
   justify-items: center;
   grid-template-columns: 1fr;
-  grid-template-rows: 0.2fr 1fr;
   grid-template-areas:
     "tituloHistoria"
     "historia";
