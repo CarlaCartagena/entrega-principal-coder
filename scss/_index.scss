@@ -1,0 +1,69 @@
+/*? HEADER - Index*/
+
+.bg-beige {
+    background-color: #face7f;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .bg-bordo {
+    background-image: url(../image/background-op-2.jpg);
+  
+    /* background-color: #911f27; */
+  }
+  
+  .nav-link {
+    color: #000000;
+  
+    &:hover {
+      color: #ca2f2f;
+    }
+  }
+  
+  .navbar {
+    padding: 0;
+  
+    img {
+      max-width: 100%;
+    }
+  }
+  
+  .navbar-nav {
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .container-fluid {
+    --bs-gutter-x:0;
+  }
+
+  /*? FOOTER */
+
+.footer {
+    background-color: #fcf0c8;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+    ul {
+      display: flex;
+  
+      li {
+        list-style-type: none;
+        margin-top: 10px;
+        margin-left: 15px;
+        padding-right: 1rem;
+      }
+    }
+  
+    p {
+      color: #000000;
+      display: inline-block;
+      text-align: center;
+      padding: 1rem;
+    }
+  }
+  
+  i {
+    font-size: 1.2rem;
+  }

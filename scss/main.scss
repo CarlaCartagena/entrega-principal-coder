@@ -1,0 +1,50 @@
+@import "index";
+@import "tour";
+@import "discografia";
+@import "tienda";
+@import "contacto";
+
+/* Colores principales 
+Negro = #000000
+Blanco = #FFFFFF
+Bordo Oscuro = #630A10
+Bordo Claro = #911F27
+Beige Claro = #FCF0C8
+Beige Oscuro = #FACE7F
+*/
+
+/* Quita padding, margin*/
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+  }
+  
+  /* Colores y texto general */
+  
+  a {
+    color: #000000;
+    text-decoration: none;
+  
+    &:hover {
+      color: #ca2f2f;
+    }
+  }
+  
+  body {
+    background-image: url(../image/background-op-2.jpg);
+  
+    /*  background-color: #630a10; */
+    font-family: "Lato", sans-serif;
+  }
+  
+  p {
+    color: #ffffff;
+  }
+  
+  /* REM */
+  
+  html {
+    font-size: 62, 5%;
+  }

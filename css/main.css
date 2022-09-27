@@ -1,0 +1,148 @@
+/*? HEADER - Index*/
+.bg-beige {
+  background-color: #face7f;
+  width: 100%;
+  text-align: center; }
+
+.bg-bordo {
+  background-image: url(../image/background-op-2.jpg);
+  /* background-color: #911f27; */ }
+
+.nav-link {
+  color: #000000; }
+  .nav-link:hover {
+    color: #ca2f2f; }
+
+.navbar {
+  padding: 0; }
+  .navbar img {
+    max-width: 100%; }
+
+.navbar-nav {
+  align-items: center;
+  justify-content: center; }
+
+.container-fluid {
+  --bs-gutter-x:0; }
+
+/*? FOOTER */
+.footer {
+  background-color: #fcf0c8;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .footer ul {
+    display: flex; }
+    .footer ul li {
+      list-style-type: none;
+      margin-top: 10px;
+      margin-left: 15px;
+      padding-right: 1rem; }
+  .footer p {
+    color: #000000;
+    display: inline-block;
+    text-align: center;
+    padding: 1rem; }
+
+i {
+  font-size: 1.2rem; }
+
+.sectionTour {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  margin: 0.5rem;
+  grid-template-areas: "tituloTour" "tourCajas1" "tourCajas2" "tourCajas3" "tourCajas4" "tourCajas5"; }
+
+.cajaGlobal {
+  display: flex;
+  padding: 10px; }
+
+.tituloTour h2 {
+  color: #ffffff;
+  text-align: center;
+  font-size: 280%;
+  padding: 1rem;
+  grid-area: tituloTour; }
+
+.tourCajas1 {
+  grid-area: tourCajas1; }
+
+.tourCajas2 {
+  grid-area: tourCajas2; }
+
+.tourCajas3 {
+  grid-area: tourCajas3; }
+
+.tourCajas4 {
+  grid-area: tourCajas4; }
+
+.tourCajas5 {
+  grid-area: tourCajas5; }
+
+.cajaNegra1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  width: 180px;
+  height: 95px; }
+  .cajaNegra1 p {
+    margin-bottom: 0; }
+
+.cajaBlanca1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 15px;
+  justify-content: space-between;
+  background-color: #ffffff;
+  width: 800px;
+  height: 95px; }
+  .cajaBlanca1 p {
+    text-align: right;
+    color: #000000;
+    margin-bottom: 0; }
+  .cajaBlanca1 button {
+    padding: 10px;
+    margin-right: 1rem;
+    background-color: #000000;
+    color: #fcf0c8;
+    border: none; }
+    .cajaBlanca1 button:hover {
+      background-color: #ca2f2f; }
+
+/* Colores principales 
+Negro = #000000
+Blanco = #FFFFFF
+Bordo Oscuro = #630A10
+Bordo Claro = #911F27
+Beige Claro = #FCF0C8
+Beige Oscuro = #FACE7F
+*/
+/* Quita padding, margin*/
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none; }
+
+/* Colores y texto general */
+a {
+  color: #000000;
+  text-decoration: none; }
+  a:hover {
+    color: #ca2f2f; }
+
+body {
+  background-image: url(../image/background-op-2.jpg);
+  /*  background-color: #630a10; */
+  font-family: "Lato", sans-serif; }
+
+p {
+  color: #ffffff; }
+
+/* REM */
+html {
+  font-size: 62, 5%; }
