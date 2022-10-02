@@ -1,69 +1,225 @@
 /*? HEADER - Index*/
 
 .bg-beige {
-    background-color: #face7f;
-    width: 100%;
-    text-align: center;
+  background-color: #face7f;
+  width: 100%;
+  text-align: center;
+}
+
+.bg-bordo {
+  background-image: url(../image/background-op-2.jpg);
+
+  /* background-color: #911f27; */
+}
+
+.nav-link {
+  color: #000000;
+
+  &:hover {
+    color: #ca2f2f;
   }
-  
-  .bg-bordo {
-    background-image: url(../image/background-op-2.jpg);
-  
-    /* background-color: #911f27; */
+}
+
+.navbar {
+  padding: 0;
+
+  img {
+    max-width: 100%;
   }
-  
-  .nav-link {
-    color: #000000;
-  
-    &:hover {
-      color: #ca2f2f;
-    }
-  }
-  
-  .navbar {
-    padding: 0;
-  
-    img {
-      max-width: 100%;
-    }
-  }
-  
-  .navbar-nav {
+}
+
+.navbar-nav {
+  align-items: center;
+  justify-content: center;
+}
+
+.container-fluid {
+  --bs-gutter-x: 0;
+}
+
+/*? MAIN - Index */
+
+/* Section tour index */
+
+.mainIndex {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "imagenCarrusel""tourpreview""sectionAlbums""merch";
+  color: #ffffff;
+  grid-area: main;
+}
+
+.sectionTour-i {
+  background-image: url(../image/background-op-5.jpg);
+  background-repeat: no-repeat;
+  grid-area: tourpreview;
+}
+
+.row {
+  margin: 0;
+}
+
+.card {
+  background-color: #414141;
+  margin-bottom: 3rem;
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+  }
+}
+
+.btn-primary {
+  background-color: #ca2f2f;
+  border: none;
+  --bs-btn-hover-bg: #911f27;
+}
+
+/* SECTION 1 - Index */
+
+.sectionAlbums {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+  grid-area: sectionAlbums;
+}
+
+.card {
+  border: none;
+}
+
+.card-text {
+  text-decoration: none;
+  margin-bottom: 1rem;
+}
+
+.btn-outline-light {
+  background-color: #d3d1d1;
+  color: #000000;
+  border: none;
+
+}
+
+.textoBoton:hover {
+  color: #ca2f2f;
+}
+
+
+/* SECTION 2 - Index */
+
+.merchIndex {
+  display: grid;
+  grid-template-columns: 1.5fr;
+  grid-template-rows: 0.1fr 0.2fr;
+  grid-template-areas: "merchTitulo""cajaMerch1";
+  grid-area: merch;
+}
+
+.merchTitulo {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  grid-area: merchTitulo;
+
+  h2 {
+    font-size: 280%;
+  }
+}
+
+.cajaMerch1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  gap: 1rem;
+  grid-area: cajaMerch1;
+
+  img {
+    width: 100%;
+    background-image: url(../image/background-op-5.jpg);
+    border-radius: 1rem;
+    border: solid 5px #ffffff;
+  }
+}
+
+/*? FORMULARIO - Index */
+
+.formulario {
+  font-size: 1.2rem;
+  padding: 1rem;
+  grid-area: formulario;
+}
+
+fieldset {
+  background-image: url(../image/background-op-5.jpg);
+  background-repeat: no-repeat;
+
+  /*   background-color: #630a10; */
+  border: none;
+  padding: 1rem;
+
+  h3 {
+    text-align: center;
+    font-size: 130%;
+    margin: 5px;
+    padding-bottom: 4px;
+    color: #ffffff;
+  }
+}
+
+form {
+  text-align: center;
+  color: #ffffff;
+}
+
+.checkbox {
+  padding: 10px;
+
+  p {
+    display: flex;
     justify-content: center;
   }
-  
-  .container-fluid {
-    --bs-gutter-x:0;
-  }
+}
 
-  /*? FOOTER */
+.boton input {
+  display: inline-block;
+  padding: 10px;
+  background-color: #ca2f2f;
+
+  &:hover {
+    background-color: #face7f;
+  }
+}
+
+/*? FOOTER */
 
 .footer {
-    background-color: #fcf0c8;
+  background-color: #fcf0c8;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  ul {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-  
-    ul {
-      display: flex;
-  
-      li {
-        list-style-type: none;
-        margin-top: 10px;
-        margin-left: 15px;
-        padding-right: 1rem;
-      }
-    }
-  
-    p {
-      color: #000000;
-      display: inline-block;
-      text-align: center;
-      padding: 1rem;
+
+    li {
+      list-style-type: none;
+      margin-top: 10px;
+      margin-left: 15px;
+      padding-right: 1rem;
     }
   }
-  
-  i {
-    font-size: 1.2rem;
+
+  p {
+    color: #000000;
+    display: inline-block;
+    text-align: center;
+    padding: 1rem;
   }
+}
+
+i {
+  font-size: 1.2rem;
+}

@@ -1,0 +1,183 @@
+/*! PÁGINA DISCOGRAFÍA */
+
+/* Section 1 */
+
+.colorGris {
+    background-image: url(../image/background-op-5.jpg);
+
+    /* background-color: #141414; */
+}
+
+.sectionDisco {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    grid-template-areas: "discoMercury";
+}
+
+.discoMercury {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 35px;
+    grid-area: discoMercury;
+}
+
+.mercuryDiscografia img {
+    border-radius: 9px;
+}
+
+.discoTexto {
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 2rem;
+    margin-left: 1.2rem;
+
+    button {
+        font-size: 1rem;
+        padding: 10px;
+        margin: 0.8rem;
+        width: 165px;
+        height: 45px;
+        background-color: #face7f;
+        border: none;
+        border-radius: 12px;
+
+        &:hover {
+            background-color: #fcf0c8;
+        }
+    }
+}
+
+/* Section cartas albums */
+
+.card {
+    background-color: #0000009f;
+    border-radius: 6px;
+
+    .colorParrafo p {
+        color: #ffffff;
+    }
+}
+
+.card-img,
+.card-img-top {
+    padding: 1rem;
+    border-radius: 25px;
+}
+
+/* Section 2 */
+
+.sectionVideos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    grid-template-areas: "cajaVideo1""cajaVideo2""cajaVideo3";
+}
+
+.cajaVideo1 {
+    grid-area: cajaVideo1;
+}
+
+.cajaVideo2 {
+    display: flex;
+    flex-direction: row-reverse;
+    grid-area: cajaVideo2;
+}
+
+.cajaVideo3 {
+    grid-area: cajaVideo3;
+}
+
+.cajaD {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    margin: 0.4rem;
+
+    .imagenesVideos {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-top: 35px;
+        filter: grayscale(100%);
+    }
+
+    .textoVideos {
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 2rem;
+        padding: 2rem;
+        margin-left: 1rem;
+
+        button {
+            font-size: 16px;
+            padding: 10px;
+            margin-top: 10px;
+            margin-right: 1rem;
+            width: 150px;
+            height: 45px;
+            background-color: #630a10;
+            border: none;
+            border-radius: 12px;
+
+            &:hover {
+                background-color: #ca2f2f;
+            }
+
+            a {
+                color: #ffffff;
+            }
+        }
+
+    }
+}
+
+/*! Animaciones */
+
+/*? Animaciones a botones discografía*/
+
+.animacion {
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+.anifoto {
+    filter: grayscale(100%);
+
+    &:hover {
+        animation: gris 3s ease-in-out infinite;
+    }
+}
+
+@keyframes gris {
+    0% {
+        filter: grayscale(0%);
+    }
+
+    25% {
+        filter: grayscale(50%);
+    }
+
+    50% {
+        filter: grayscale(100%);
+    }
+
+    75% {
+        filter: grayscale(50%);
+    }
+
+    100% {
+        filter: grayscale(0%);
+    }
+}

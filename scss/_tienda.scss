@@ -1,0 +1,70 @@
+/*! PÁGINA TIENDA */
+
+/* Section 1 - albums */
+
+.tiendaAlbums {
+    display: grid;
+    grid-template-columns: 1.5fr;
+    grid-template-rows: 0.2fr 1fr;
+    grid-auto-flow: row;
+    grid-template-areas: "tituloAlbum""cajaTienda1";
+}
+
+.cajaTienda1 {
+    display: flex;
+    justify-content: center;
+    grid-area: cajaTienda1;
+
+    h3 {
+        color: #ffffff;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+}
+
+.tiendaAlbums h2 {
+    color: #ffffff;
+    text-align: center;
+    margin: 2rem;
+    padding: 1rem;
+    font-size: 4.5rem;
+    grid-area: tituloAlbum;
+}
+
+.cajaTienda1,
+.cajaTienda2 h3 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+/* Section 2 - merch  */
+
+.tiendaMerch {
+    display: grid;
+    grid-template-columns: 1.5fr;
+    grid-template-rows: 0.2fr 1fr 0.2fr;
+    grid-auto-flow: row;
+    grid-template-areas: "tituloMerch""cajaTienda2";
+}
+
+.cajaTienda2 {
+    display: flex;
+    justify-content: center;
+    grid-area: cajaTienda2;
+
+    h3 {
+        color: #ffffff;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+}
+
+.tiendaMerch h2 {
+    color: #ffffff;
+    text-align: center;
+    margin: 2rem;
+    padding: 1rem;
+    font-size: 4.1rem;
+    grid-area: tituloMerch;
+}

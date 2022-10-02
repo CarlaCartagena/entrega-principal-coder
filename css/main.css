@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*? HEADER - Index*/
 .bg-beige {
   background-color: #face7f;
@@ -23,7 +24,125 @@
   justify-content: center; }
 
 .container-fluid {
-  --bs-gutter-x:0; }
+  --bs-gutter-x: 0; }
+
+/*? MAIN - Index */
+/* Section tour index */
+.mainIndex {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "imagenCarrusel" "tourpreview" "sectionAlbums" "merch";
+  color: #ffffff;
+  grid-area: main; }
+
+.sectionTour-i {
+  background-image: url(../image/background-op-5.jpg);
+  background-repeat: no-repeat;
+  grid-area: tourpreview; }
+
+.row {
+  margin: 0; }
+
+.card {
+  background-color: #414141;
+  margin-bottom: 3rem; }
+  .card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+
+.btn-primary {
+  background-color: #ca2f2f;
+  border: none;
+  --bs-btn-hover-bg: #911f27; }
+
+/* SECTION 1 - Index */
+.sectionAlbums {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+  grid-area: sectionAlbums; }
+
+.card {
+  border: none; }
+
+.card-text {
+  text-decoration: none;
+  margin-bottom: 1rem; }
+
+.btn-outline-light {
+  background-color: #d3d1d1;
+  color: #000000;
+  border: none; }
+
+.textoBoton:hover {
+  color: #ca2f2f; }
+
+/* SECTION 2 - Index */
+.merchIndex {
+  display: grid;
+  grid-template-columns: 1.5fr;
+  grid-template-rows: 0.1fr 0.2fr;
+  grid-template-areas: "merchTitulo" "cajaMerch1";
+  grid-area: merch; }
+
+.merchTitulo {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  grid-area: merchTitulo; }
+  .merchTitulo h2 {
+    font-size: 280%; }
+
+.cajaMerch1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  gap: 1rem;
+  grid-area: cajaMerch1; }
+  .cajaMerch1 img {
+    width: 100%;
+    background-image: url(../image/background-op-5.jpg);
+    border-radius: 1rem;
+    border: solid 5px #ffffff; }
+
+/*? FORMULARIO - Index */
+.formulario {
+  font-size: 1.2rem;
+  padding: 1rem;
+  grid-area: formulario; }
+
+fieldset {
+  background-image: url(../image/background-op-5.jpg);
+  background-repeat: no-repeat;
+  /*   background-color: #630a10; */
+  border: none;
+  padding: 1rem; }
+  fieldset h3 {
+    text-align: center;
+    font-size: 130%;
+    margin: 5px;
+    padding-bottom: 4px;
+    color: #ffffff; }
+
+form {
+  text-align: center;
+  color: #ffffff; }
+
+.checkbox {
+  padding: 10px; }
+  .checkbox p {
+    display: flex;
+    justify-content: center; }
+
+.boton input {
+  display: inline-block;
+  padding: 10px;
+  background-color: #ca2f2f; }
+  .boton input:hover {
+    background-color: #face7f; }
 
 /*? FOOTER */
 .footer {
@@ -113,6 +232,349 @@ i {
     border: none; }
     .cajaBlanca1 button:hover {
       background-color: #ca2f2f; }
+
+/*! PÁGINA DISCOGRAFÍA */
+/* Section 1 */
+.colorGris {
+  background-image: url(../image/background-op-5.jpg);
+  /* background-color: #141414; */ }
+
+.sectionDisco {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  grid-template-areas: "discoMercury"; }
+
+.discoMercury {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 35px;
+  grid-area: discoMercury; }
+
+.mercuryDiscografia img {
+  border-radius: 9px; }
+
+.discoTexto {
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.4rem;
+  padding: 2rem;
+  margin-left: 1.2rem; }
+  .discoTexto button {
+    font-size: 1rem;
+    padding: 10px;
+    margin: 0.8rem;
+    width: 165px;
+    height: 45px;
+    background-color: #face7f;
+    border: none;
+    border-radius: 12px; }
+    .discoTexto button:hover {
+      background-color: #fcf0c8; }
+
+/* Section cartas albums */
+.card {
+  background-color: #0000009f;
+  border-radius: 6px; }
+  .card .colorParrafo p {
+    color: #ffffff; }
+
+.card-img,
+.card-img-top {
+  padding: 1rem;
+  border-radius: 25px; }
+
+/* Section 2 */
+.sectionVideos {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-items: center;
+  grid-template-areas: "cajaVideo1" "cajaVideo2" "cajaVideo3"; }
+
+.cajaVideo1 {
+  grid-area: cajaVideo1; }
+
+.cajaVideo2 {
+  display: flex;
+  flex-direction: row-reverse;
+  grid-area: cajaVideo2; }
+
+.cajaVideo3 {
+  grid-area: cajaVideo3; }
+
+.cajaD {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  margin: 0.4rem; }
+  .cajaD .imagenesVideos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 35px;
+    filter: grayscale(100%); }
+  .cajaD .textoVideos {
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+    padding: 2rem;
+    margin-left: 1rem; }
+    .cajaD .textoVideos button {
+      font-size: 16px;
+      padding: 10px;
+      margin-top: 10px;
+      margin-right: 1rem;
+      width: 150px;
+      height: 45px;
+      background-color: #630a10;
+      border: none;
+      border-radius: 12px; }
+      .cajaD .textoVideos button:hover {
+        background-color: #ca2f2f; }
+      .cajaD .textoVideos button a {
+        color: #ffffff; }
+
+/*! Animaciones */
+/*? Animaciones a botones discografía*/
+.animacion {
+  transition: all 0.2s ease-in-out; }
+  .animacion:hover {
+    transform: scale(1.2); }
+
+.anifoto {
+  filter: grayscale(100%); }
+  .anifoto:hover {
+    animation: gris 3s ease-in-out infinite; }
+
+@keyframes gris {
+  0% {
+    filter: grayscale(0%); }
+  25% {
+    filter: grayscale(50%); }
+  50% {
+    filter: grayscale(100%); }
+  75% {
+    filter: grayscale(50%); }
+  100% {
+    filter: grayscale(0%); } }
+
+/*! PÁGINA TIENDA */
+/* Section 1 - albums */
+.tiendaAlbums {
+  display: grid;
+  grid-template-columns: 1.5fr;
+  grid-template-rows: 0.2fr 1fr;
+  grid-auto-flow: row;
+  grid-template-areas: "tituloAlbum" "cajaTienda1"; }
+
+.cajaTienda1 {
+  display: flex;
+  justify-content: center;
+  grid-area: cajaTienda1; }
+  .cajaTienda1 h3 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.3rem; }
+
+.tiendaAlbums h2 {
+  color: #ffffff;
+  text-align: center;
+  margin: 2rem;
+  padding: 1rem;
+  font-size: 4.5rem;
+  grid-area: tituloAlbum; }
+
+.cajaTienda1,
+.cajaTienda2 h3 {
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.3rem; }
+
+/* Section 2 - merch  */
+.tiendaMerch {
+  display: grid;
+  grid-template-columns: 1.5fr;
+  grid-template-rows: 0.2fr 1fr 0.2fr;
+  grid-auto-flow: row;
+  grid-template-areas: "tituloMerch" "cajaTienda2"; }
+
+.cajaTienda2 {
+  display: flex;
+  justify-content: center;
+  grid-area: cajaTienda2; }
+  .cajaTienda2 h3 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.3rem; }
+
+.tiendaMerch h2 {
+  color: #ffffff;
+  text-align: center;
+  margin: 2rem;
+  padding: 1rem;
+  font-size: 4.1rem;
+  grid-area: tituloMerch; }
+
+/*! PÁGINA CONTACTO */
+.mainContacto {
+  background-image: url(../image/fotografia-banda3-bw.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover; }
+
+/* Section 1 */
+.sectionHistoria {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  grid-template-areas: "tituloHistoria" "historia"; }
+  .sectionHistoria h2 {
+    display: flex;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.788) 0%, rgba(255, 255, 255, 0) 100%);
+    color: #ffffff;
+    justify-content: center;
+    width: 720px;
+    padding: 2rem;
+    font-size: 3.6rem;
+    margin-top: 1rem;
+    grid-area: tituloHistoria; }
+
+.historia {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to top, black 0%, rgba(255, 255, 255, 0) 100%);
+  text-align: justify;
+  width: 720px;
+  padding: 0 2rem 2rem 2rem;
+  grid-area: historia; }
+  .historia p {
+    padding-top: 1rem;
+    font-size: 1.1rem; }
+
+/* Section 2 */
+.cambioParrafo h5 {
+  color: #ffffff; }
+
+/* Media queires - Celular 425px */
+@media (max-width: 425px) {
+  /* Nav */
+  .navbar img {
+    width: 70%;
+    justify-content: center; }
+  .navbar-brand {
+    display: flex;
+    justify-content: center; }
+  /*? Index */
+  /* Section 2 */
+  .sectionAlbums {
+    display: flex; }
+  .cajaMerch1 {
+    margin-left: 1rem;
+    flex-direction: column; }
+    .cajaMerch1 img {
+      width: 70%;
+      margin-left: 3rem; }
+  .merchTitulo h2 {
+    font-size: 200%;
+    margin-left: 0; }
+  /* Formulario */
+  label {
+    display: block; }
+  .checkbox {
+    padding: 20px;
+    width: 100%; }
+  /*? TOUR */
+  .cajaBlanca1 {
+    width: 194px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; }
+    .cajaBlanca1 p {
+      font-size: 13px; }
+  /*? Discografia */
+  .discoMercury {
+    display: flex;
+    flex-wrap: wrap; }
+    .discoMercury img {
+      width: 332px; }
+  .cajaVideo1 {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap; }
+  .imagenesVideos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; }
+    .imagenesVideos img {
+      width: 364px;
+      margin-left: -4px; }
+  .textoVideos {
+    justify-content: center;
+    align-items: center; }
+  .cajaD {
+    flex-direction: column-reverse; }
+  /*?TIENDA */
+  .cajaTienda1 {
+    display: flex;
+    margin-left: -3rem;
+    flex-direction: column; }
+  .tiendaAlbums h2 {
+    text-align: center;
+    font-size: 2.5rem; }
+  .cajaTienda1 img {
+    flex-direction: column;
+    width: 70%; }
+  .cajaTienda2 {
+    flex-direction: column;
+    flex-wrap: wrap; }
+    .cajaTienda2 img {
+      flex-direction: column;
+      width: 70%;
+      margin-left: 4rem; }
+  .tiendaMerch h2 {
+    text-align: center;
+    padding: 1rem;
+    font-size: 3rem; }
+  /*? NOSOTROS */
+  .mainContacto {
+    background-image: none;
+    background-color: #2c2c2c; }
+  .sectionHistoria {
+    display: flex;
+    flex-wrap: wrap; }
+    .sectionHistoria h2 {
+      flex-direction: column;
+      flex-wrap: wrap;
+      font-size: 40px; }
+  .imagenesBanda {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    margin-top: 240px; }
+    .imagenesBanda img {
+      width: 180px; }
+  .nombreBanda {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center; }
+  /*? Footer */
+  .footer {
+    flex-direction: column; }
+    .footer ul {
+      padding: 10px; }
+    .footer p {
+      padding: 0;
+      width: 15rem; } }
 
 /* Colores principales 
 Negro = #000000

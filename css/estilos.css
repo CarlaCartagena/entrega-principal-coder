@@ -8,40 +8,40 @@ Beige Oscuro = #FACE7F
 */
 
 /* Quita padding, margin*/
-* {
+/* * {
   padding: 0;
   margin: 0;
   text-decoration: none;
-}
+} */
 
 /* Colores y texto general */
-a {
+/* a {
   color: #000000;
   text-decoration: none;
 }
 
 a:hover {
   color: #ca2f2f;
-}
+} */
 
-body {
-  background-image: url(../image/background-op-2.jpg);
+/* body {
+  background-image: url(../image/background-op-2.jpg); */
  /*  background-color: #630a10; */
-  font-family: "Lato", sans-serif;
-}
-
+/*   font-family: "Lato", sans-serif;
+} */
+/* 
 p {
   color: #ffffff;
 }
 /* REM */
-html {
+/* html {
   font-size: 62, 5%;
 }
-
+ */
 /*! INDEX */
 
 /*? HEADER - Index*/
-
+/* 
 .navbar img{
   max-width: 100%;
 }
@@ -53,11 +53,11 @@ html {
 }
 
 .bg-bordo{
-  background-image: url(../image/background-op-2.jpg);
+  background-image: url(../image/background-op-2.jpg); */
   /* background-color: #911f27; */
-}
+/* } */
 
-.nav-link{
+/* .nav-link{
   color: #000000;
 }
 
@@ -75,12 +75,12 @@ html {
 }
 .container-fluid{
   --bs-gutter-x: 0;
-}
+} */
 
 /*? MAIN - Index */
 
 /* Section tour index */
-
+/* 
 .mainIndex {
   display: grid;
   grid-template-columns: 1fr;
@@ -120,11 +120,11 @@ html {
   background-color: #ca2f2f;
   border: none;
   --bs-btn-hover-bg: #911f27;
-}
+} */
 
 /* SECTION 1 - Index */
 
-.sectionAlbums{
+/* .sectionAlbums{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -148,10 +148,10 @@ html {
 }
 .textoBoton:hover{
   color: #ca2f2f;
-}
+} */
 
 /* SECTION 2 - Index */
-
+/* 
 .merchIndex {
   display: grid;
   grid-template-columns: 1.5fr;
@@ -186,10 +186,10 @@ html {
   border: solid 5px #ffffff;
   margin: 1.5rem;
 }
-
+ */
 /*? FORMULARIO - Index */
 
-.formulario {
+/* .formulario {
   font-size: 1.2rem;
   padding: 1rem;
   grid-area: formulario;
@@ -199,7 +199,7 @@ fieldset {
   background-image: url(../image/background-op-5.jpg);
   background-repeat: no-repeat;
 /*   background-color: #630a10; */
-  border: none;
+/*   border: none;
   padding: 1rem;
 }
 
@@ -231,10 +231,10 @@ form {
 }
 .boton input:hover {
   background-color: #face7f;
-}
+} */ 
 
 /*? FOOTER */
-
+/* 
 .footer {
   background-color: #fcf0c8;
   display: flex;
@@ -262,7 +262,7 @@ i {
   display: inline-block;
   text-align: center;
   padding: 1rem;
-}
+} */
 
 /*! PÁGINA TOUR */
 
@@ -356,10 +356,10 @@ i {
 /*! PÁGINA DISCOGRAFÍA */
 
 /* Section 1 */
-.colorGris {
-  background-image: url(../image/background-op-5.jpg);
+/* .colorGris {
+  background-image: url(../image/background-op-5.jpg); */
   /* background-color: #141414; */
-}
+/* }
 .sectionDisco {
   display: grid;
   grid-template-columns: 1fr;
@@ -401,11 +401,11 @@ i {
 
 .discoTexto button:hover {
   background-color: #fcf0c8;
-}
+} */
 
 /* Section cartas albums */
 
-.card-img, .card-img-top{
+/* .card-img, .card-img-top{
   padding: 1rem;
 }
 
@@ -421,11 +421,11 @@ i {
 
 .card, .colorParrafo p{
   color: #ffffff;
-}
+} */
 
 
 /* Section 2 */
-
+/* 
 .sectionVideos {
   display: grid;
   grid-template-columns: 1fr;
@@ -495,11 +495,12 @@ i {
 .textoVideos a {
   color: #ffffff;
 }
+ */
 
 /*! PÁGINA TIENDA */
 
 /* Section 1 - albums */
-
+/* 
 .tiendaAlbums {
   display: grid;
   grid-template-columns: 1.5fr;
@@ -530,11 +531,11 @@ i {
   color: #ffffff;
   text-align: center;
   font-size: 1.3rem;
-}
+} */
 
 /* Section 2 - merch  */
 
-.tiendaMerch {
+/* .tiendaMerch {
   display: grid;
   grid-template-columns: 1.5fr;
   grid-template-rows: 0.2fr 1fr 0.2fr;
@@ -557,7 +558,7 @@ i {
   padding: 1rem;
   font-size: 4.1rem;
   grid-area: tituloMerch;
-}
+} */
 
 /*! PÁGINA CONTACTO */
 
@@ -608,10 +609,9 @@ i {
 
 /* Section 2 */
 
-.sectionNosotros {
+/* .sectionNosotros {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 0.1fr;
   grid-template-areas:
     "cajaImagenes1"
     "nombreBanda";
@@ -637,11 +637,11 @@ i {
   justify-content: space-around;
   grid-area: nombreBanda;
 }
-
+ */
 /*! Animaciones */
 
 /*? Animaciones a botones discografía*/
-
+/* 
 .animacion{
   transition: all 0.2s ease-in-out;
 }
@@ -674,7 +674,7 @@ i {
     filter: grayscale(0%);
   }
 }
-
+ */
 
 /*TODO  media queires - TABLET 768px */
 
@@ -775,10 +775,10 @@ i {
 
 /*TODO media queires - Celular 425px  */
 
-@media (max-width: 425px) {
+/* @media (max-width: 425px) { */
 
   /* Nav */
-  .navbar img {
+ /*  .navbar img {
     width: 70%;
     justify-content: center;
   }
@@ -786,12 +786,12 @@ i {
   .navbar-brand{
     display: flex;
     justify-content: center;
-  }
+  } */
 
   /*? Index */
 
   /* Section 2 */
-
+/* 
   .sectionAlbums{
     display: flex;
   }
@@ -809,10 +809,10 @@ i {
   .merchTitulo h2 {
     font-size: 200%;
     margin-left: 0;
-  }
+  } */
 
   /* Formulario */
-
+/* 
   label {
     display: block;
   }
@@ -820,10 +820,10 @@ i {
   .checkbox {
     padding: 20px;
     width: 100%;
-  }
+  } */
 
   /*? TOUR */
-
+/* 
   .cajaBlanca1 {
     width: 194px;
     display: flex;
@@ -835,9 +835,9 @@ i {
   .cajaBlanca1 p {
     font-size: 13px;
   }
-
+ */
   /*? Discografia */
-
+/* 
   .discoMercury {
     display: flex;
     flex-wrap: wrap;
@@ -867,9 +867,9 @@ i {
   .cajaD {
     flex-direction: column-reverse;
   }
-
+ */
   /*?TIENDA */
-
+/* 
   .cajaTienda1 {
     display: flex;
     margin-left: -3rem;
@@ -902,10 +902,10 @@ i {
     text-align: center;
     padding: 1rem;
     font-size: 3rem;
-  }
+  } */
 
   /*? Nosotros */
-
+/* 
   .mainContacto {
     background-image: none;
     background-color: #2c2c2c;
@@ -934,10 +934,10 @@ i {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-  }
+  } */
 
   /*? Footer */
-
+/* 
   .footer {
     flex-direction: column;
   }
@@ -949,3 +949,4 @@ i {
     width: 15rem;
   }
 }
+ */
