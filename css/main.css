@@ -5,7 +5,7 @@
 /* MIXIN - Página Tienda */
 /*? HEADER - Index*/
 .bg-beige {
-  background-color: #face7f;
+  background-color: #FACE7F;
   width: 100%;
   text-align: center; }
 
@@ -36,7 +36,7 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas: "imagenCarrusel" "tourpreview" "sectionAlbums" "merch";
-  color: #ffffff;
+  color: #FFFFFF;
   grid-area: main; }
 
 .sectionTour-i {
@@ -59,7 +59,7 @@
 .btn-primary {
   background-color: #ca2f2f;
   border: none;
-  --bs-btn-hover-bg: #911f27; }
+  --bs-btn-hover-bg: $colorBordo-Claro; }
 
 /* SECTION 1 - Index */
 .sectionAlbums {
@@ -110,7 +110,7 @@
     width: 100%;
     background-image: url(../image/background-op-5.jpg);
     border-radius: 1rem;
-    border: solid 5px #ffffff; }
+    border: solid 5px #FFFFFF; }
 
 /*? FORMULARIO - Index */
 .formulario {
@@ -129,11 +129,11 @@ fieldset {
     font-size: 130%;
     margin: 5px;
     padding-bottom: 4px;
-    color: #ffffff; }
+    color: #FFFFFF; }
 
 form {
   text-align: center;
-  color: #ffffff; }
+  color: #FFFFFF; }
 
 .checkbox {
   padding: 10px; }
@@ -146,11 +146,11 @@ form {
   padding: 10px;
   background-color: #ca2f2f; }
   .boton input:hover {
-    background-color: #face7f; }
+    background-color: #FACE7F; }
 
 /*? FOOTER */
 .footer {
-  background-color: #fcf0c8;
+  background-color: #FCF0C8;
   display: flex;
   justify-content: space-around;
   align-items: center; }
@@ -183,7 +183,7 @@ i {
   padding: 10px; }
 
 .tituloTour h2 {
-  color: #ffffff;
+  color: #FFFFFF;
   text-align: center;
   font-size: 280%;
   padding: 1rem;
@@ -221,7 +221,7 @@ i {
   align-items: center;
   padding-left: 15px;
   justify-content: space-between;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   width: 800px;
   height: 95px; }
   .cajaBlanca1 p {
@@ -232,7 +232,7 @@ i {
     padding: 10px;
     margin-right: 1rem;
     background-color: #000000;
-    color: #fcf0c8;
+    color: #FCF0C8;
     border: none; }
     .cajaBlanca1 button:hover {
       background-color: #ca2f2f; }
@@ -262,7 +262,7 @@ i {
   border-radius: 9px; }
 
 .discoTexto, .cajaD .textoVideos {
-  color: #ffffff;
+  color: #FFFFFF;
   text-align: center;
   font-size: 1.4rem;
   padding: 2rem;
@@ -273,18 +273,18 @@ i {
     margin: 0.8rem;
     width: 165px;
     height: 45px;
-    background-color: #face7f;
+    background-color: #FACE7F;
     border: none;
     border-radius: 12px; }
     .discoTexto .botonDisco--Beige:hover, .cajaD .textoVideos .botonDisco--Beige:hover, .cajaD .textoVideos .botonDisco--Rojo:hover {
-      background-color: #fcf0c8; }
+      background-color: #FCF0C8; }
 
 /* Section cartas albums */
 .card {
   background-color: #0000009f;
   border-radius: 6px; }
   .card .colorParrafo p {
-    color: #ffffff; }
+    color: #FFFFFF; }
 
 .card-img,
 .card-img-top {
@@ -334,7 +334,7 @@ i {
         padding: 2rem;
         margin-left: 1rem; */ }
     .cajaD .textoVideos .botonDisco--Rojo {
-      background-color: #630a10;
+      background-color: #630A10;
       margin-top: 10px;
       margin-right: 1rem;
       /*font-size: 16px;
@@ -346,7 +346,7 @@ i {
       .cajaD .textoVideos .botonDisco--Rojo:hover {
         background-color: #ca2f2f; }
       .cajaD .textoVideos .botonDisco--Rojo a {
-        color: #ffffff; }
+        color: #FFFFFF; }
 
 /*! Animaciones */
 /*? Animaciones a botones discografía*/
@@ -396,7 +396,7 @@ i {
         font-size: 1.3rem; */ }
 
 .tiendaAlbums h2 {
-  color: #ffffff;
+  color: #FFFFFF;
   text-align: center;
   margin: 2rem;
   padding: 1rem;
@@ -426,7 +426,7 @@ i {
         font-size: 1.3rem; */ }
 
 .tiendaMerch h2 {
-  color: #ffffff;
+  color: #FFFFFF;
   text-align: center;
   margin: 2rem;
   padding: 1rem;
@@ -449,7 +449,7 @@ i {
   .sectionHistoria h2 {
     display: flex;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.788) 0%, rgba(255, 255, 255, 0) 100%);
-    color: #ffffff;
+    color: #FFFFFF;
     justify-content: center;
     width: 720px;
     padding: 2rem;
@@ -471,7 +471,7 @@ i {
 
 /* Section 2 */
 .cambioParrafo h5 {
-  color: #ffffff; }
+  color: #FFFFFF; }
 
 /* Media queires - Celular 425px */
 @media (max-width: 425px) {

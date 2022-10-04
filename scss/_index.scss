@@ -1,7 +1,7 @@
 /*? HEADER - Index*/
 
 .bg-beige {
-  background-color: #face7f;
+  background-color: $colorBeige-Oscuro;
   width: 100%;
   text-align: center;
 }
@@ -13,10 +13,10 @@
 }
 
 .nav-link {
-  color: #000000;
+  color: $colorNegro;
 
   &:hover {
-    color: #ca2f2f;
+    color: $colorRojo;
   }
 }
 
@@ -45,7 +45,7 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas: "imagenCarrusel""tourpreview""sectionAlbums""merch";
-  color: #ffffff;
+  color: $colorBlanco;
   grid-area: main;
 }
 
@@ -60,7 +60,7 @@
 }
 
 .card {
-  background-color: #414141;
+  background-color: $colorGris;
   margin-bottom: 3rem;
 
   .card-body {
@@ -72,9 +72,9 @@
 }
 
 .btn-primary {
-  background-color: #ca2f2f;
+  background-color: $colorRojo;
   border: none;
-  --bs-btn-hover-bg: #911f27;
+  --bs-btn-hover-bg: $colorBordo-Claro;
 }
 
 /* SECTION 1 - Index */
@@ -98,13 +98,13 @@
 
 .btn-outline-light {
   background-color: #d3d1d1;
-  color: #000000;
+  color: $colorNegro;
   border: none;
 
 }
 
 .textoBoton:hover {
-  color: #ca2f2f;
+  color: $colorRojo;
 }
 
 
@@ -140,7 +140,7 @@
     width: 100%;
     background-image: url(../image/background-op-5.jpg);
     border-radius: 1rem;
-    border: solid 5px #ffffff;
+    border: solid 5px $colorBlanco;
   }
 }
 
@@ -165,13 +165,13 @@ fieldset {
     font-size: 130%;
     margin: 5px;
     padding-bottom: 4px;
-    color: #ffffff;
+    color: $colorBlanco;
   }
 }
 
 form {
   text-align: center;
-  color: #ffffff;
+  color: $colorBlanco;
 }
 
 .checkbox {
@@ -186,17 +186,17 @@ form {
 .boton input {
   display: inline-block;
   padding: 10px;
-  background-color: #ca2f2f;
+  background-color: $colorRojo;
 
   &:hover {
-    background-color: #face7f;
+    background-color: $colorBeige-Oscuro;
   }
 }
 
 /*? FOOTER */
 
 .footer {
-  background-color: #fcf0c8;
+  background-color: $colorBeige-Claro;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -213,7 +213,7 @@ form {
   }
 
   p {
-    color: #000000;
+    color: $colorNegro;
     display: inline-block;
     text-align: center;
     padding: 1rem;

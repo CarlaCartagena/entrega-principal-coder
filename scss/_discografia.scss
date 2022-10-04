@@ -30,7 +30,7 @@
 }
 
 .discoTexto {
-    color: #ffffff;
+    color: $colorBlanco;
     text-align: center;
     font-size: 1.4rem;
     padding: 2rem;
@@ -42,12 +42,12 @@
         margin: 0.8rem;
         width: 165px;
         height: 45px;
-        background-color: #face7f;
+        background-color: $colorBeige-Oscuro;
         border: none;
         border-radius: 12px;
 
         &:hover {
-            background-color: #fcf0c8;
+            background-color: $colorBeige-Claro;
         }
     }
 }
@@ -59,7 +59,7 @@
     border-radius: 6px;
 
     .colorParrafo p {
-        color: #ffffff;
+        color: $colorBlanco;
     }
 }
 
@@ -124,7 +124,7 @@
 
         .botonDisco--Rojo {
             @extend .botonDisco--Beige;
-            background-color: #630a10;
+            background-color: $colorBordo-Oscuro;
             margin-top: 10px;
             margin-right: 1rem;
             
@@ -136,11 +136,11 @@
             border-radius: 12px; */
 
             &:hover {
-                background-color: #ca2f2f;
+                background-color: $colorRojo;
             }
 
             a {
-                color: #ffffff;
+                color: $colorBlanco;
             }
         }
 

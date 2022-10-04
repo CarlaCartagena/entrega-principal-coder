@@ -1,0 +1,6 @@
+SEO
+
+1. Cambio en los titulos de las páginas agredando "Imagine dragons" para especificar.
+2. Agregado de diferentes keywords de 10 palabras en cada página.
+3. Agregado de descripciones diferentes en cada página, apropiadas a su sector en el sitio. 
+4. Agregado de alt en todos los html faltantes: index y contacto. 

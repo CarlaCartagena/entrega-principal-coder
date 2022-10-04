@@ -18,7 +18,7 @@
     h2 {
         display: flex;
         background: linear-gradient(to bottom, rgba(0, 0, 0, 0.788) 0%, rgba(255, 255, 255, 0) 100%);
-        color: #ffffff;
+        color: $colorBlanco;
         justify-content: center;
         width: 720px;
         padding: 2rem;
@@ -46,5 +46,5 @@
 /* Section 2 */
 
 .cambioParrafo h5{
-    color:#ffffff
+    color:$colorBlanco
   }
