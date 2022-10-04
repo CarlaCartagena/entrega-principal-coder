@@ -36,7 +36,7 @@
     padding: 2rem;
     margin-left: 1.2rem;
 
-    button {
+    .botonDisco--Beige {
         font-size: 1rem;
         padding: 10px;
         margin: 0.8rem;
@@ -109,24 +109,31 @@
     }
 
     .textoVideos {
-        color: #ffffff;
+        @extend .discoTexto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        /* color: #ffffff;
         display: flex;
         flex-direction: column;
         align-items: center;
         font-size: 2rem;
         padding: 2rem;
-        margin-left: 1rem;
+        margin-left: 1rem; */
 
-        button {
-            font-size: 16px;
-            padding: 10px;
+        .botonDisco--Rojo {
+            @extend .botonDisco--Beige;
+            background-color: #630a10;
             margin-top: 10px;
             margin-right: 1rem;
+            
+            /*font-size: 16px;
+            padding: 10px;
             width: 150px;
             height: 45px;
-            background-color: #630a10;
             border: none;
-            border-radius: 12px;
+            border-radius: 12px; */
 
             &:hover {
                 background-color: #ca2f2f;

@@ -11,14 +11,16 @@
 }
 
 .cajaTienda1 {
-    display: flex;
-    justify-content: center;
+    @include flexTienda;
+    /* display: flex;
+    justify-content: center; */
     grid-area: cajaTienda1;
 
     h3 {
-        color: #ffffff;
+        @include h3tienda(#ffffff, center, 1.3rem)
+        /* color: #ffffff;
         text-align: center;
-        font-size: 1.3rem;
+        font-size: 1.3rem; */
     }
 }
 
@@ -29,13 +31,6 @@
     padding: 1rem;
     font-size: 4.5rem;
     grid-area: tituloAlbum;
-}
-
-.cajaTienda1,
-.cajaTienda2 h3 {
-    color: #ffffff;
-    text-align: center;
-    font-size: 1.3rem;
 }
 
 /* Section 2 - merch  */
@@ -49,14 +44,16 @@
 }
 
 .cajaTienda2 {
-    display: flex;
-    justify-content: center;
+    @include flexTienda;
+    /* display: flex;
+    justify-content: center; */
     grid-area: cajaTienda2;
 
     h3 {
-        color: #ffffff;
+        @include h3tienda(#ffffff, center, 1.3rem)
+        /* color: #ffffff;
         text-align: center;
-        font-size: 1.3rem;
+        font-size: 1.3rem; */
     }
 }
 

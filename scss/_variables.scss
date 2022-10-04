@@ -1,0 +1,34 @@
+$colorNegro: #000000;
+$colorBlanco: #FFFFFF;
+$colorBordo-Oscuro: #630A10;
+$colorBordo-Claro: #911F27;
+$colorRojo: #ca2f2f;
+$colorBeige-Oscuro: #FACE7F;
+$colorBeige-Claro: #FCF0C8;
+$colorGris: #414141;
+
+/* MAP GET */
+/* Declarar mapa - Pagina Nosotros - Section 1, clase "historia" */
+
+$estilos:(
+    fondo: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%),
+    tamaño: 720px,
+    padding: 0 2rem 2rem 2rem
+);
+
+/* EXTEND - Página Discografía botones */
+
+/* MIXIN - Página Tienda */
+
+@mixin h3tienda($color, $alineacion, $tamano) {
+    color: $color;
+    text-align: $alineacion;
+    font-size: $tamano;
+}
+
+@mixin flexTienda {
+    display: flex;
+    justify-content: center;
+}
+
+

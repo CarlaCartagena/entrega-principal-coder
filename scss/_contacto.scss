@@ -31,10 +31,10 @@
 .historia {
     display: flex;
     flex-direction: column;
-    background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    background: map-get($estilos, fondo);
     text-align: justify;
-    width: 720px;
-    padding: 0 2rem 2rem 2rem;
+    width: map-get($estilos, tamaño);
+    padding: map-get($estilos, padding);
     grid-area: historia;
 
     p {

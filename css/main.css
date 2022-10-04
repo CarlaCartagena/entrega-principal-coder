@@ -1,4 +1,8 @@
 @charset "UTF-8";
+/* MAP GET */
+/* Declarar mapa - Pagina Nosotros - Section 1, clase "historia" */
+/* EXTEND - Página Discografía botones */
+/* MIXIN - Página Tienda */
 /*? HEADER - Index*/
 .bg-beige {
   background-color: #face7f;
@@ -257,13 +261,13 @@ i {
 .mercuryDiscografia img {
   border-radius: 9px; }
 
-.discoTexto {
+.discoTexto, .cajaD .textoVideos {
   color: #ffffff;
   text-align: center;
   font-size: 1.4rem;
   padding: 2rem;
   margin-left: 1.2rem; }
-  .discoTexto button {
+  .discoTexto .botonDisco--Beige, .cajaD .textoVideos .botonDisco--Beige, .cajaD .textoVideos .botonDisco--Rojo {
     font-size: 1rem;
     padding: 10px;
     margin: 0.8rem;
@@ -272,7 +276,7 @@ i {
     background-color: #face7f;
     border: none;
     border-radius: 12px; }
-    .discoTexto button:hover {
+    .discoTexto .botonDisco--Beige:hover, .cajaD .textoVideos .botonDisco--Beige:hover, .cajaD .textoVideos .botonDisco--Rojo:hover {
       background-color: #fcf0c8; }
 
 /* Section cartas albums */
@@ -319,26 +323,29 @@ i {
     padding-top: 35px;
     filter: grayscale(100%); }
   .cajaD .textoVideos {
-    color: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 2rem;
-    padding: 2rem;
-    margin-left: 1rem; }
-    .cajaD .textoVideos button {
-      font-size: 16px;
-      padding: 10px;
+    /* color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 2rem;
+        padding: 2rem;
+        margin-left: 1rem; */ }
+    .cajaD .textoVideos .botonDisco--Rojo {
+      background-color: #630a10;
       margin-top: 10px;
       margin-right: 1rem;
-      width: 150px;
-      height: 45px;
-      background-color: #630a10;
-      border: none;
-      border-radius: 12px; }
-      .cajaD .textoVideos button:hover {
+      /*font-size: 16px;
+            padding: 10px;
+            width: 150px;
+            height: 45px;
+            border: none;
+            border-radius: 12px; */ }
+      .cajaD .textoVideos .botonDisco--Rojo:hover {
         background-color: #ca2f2f; }
-      .cajaD .textoVideos button a {
+      .cajaD .textoVideos .botonDisco--Rojo a {
         color: #ffffff; }
 
 /*! Animaciones */
@@ -377,11 +384,16 @@ i {
 .cajaTienda1 {
   display: flex;
   justify-content: center;
+  /* display: flex;
+    justify-content: center; */
   grid-area: cajaTienda1; }
   .cajaTienda1 h3 {
     color: #ffffff;
     text-align: center;
-    font-size: 1.3rem; }
+    font-size: 1.3rem;
+    /* color: #ffffff;
+        text-align: center;
+        font-size: 1.3rem; */ }
 
 .tiendaAlbums h2 {
   color: #ffffff;
@@ -390,12 +402,6 @@ i {
   padding: 1rem;
   font-size: 4.5rem;
   grid-area: tituloAlbum; }
-
-.cajaTienda1,
-.cajaTienda2 h3 {
-  color: #ffffff;
-  text-align: center;
-  font-size: 1.3rem; }
 
 /* Section 2 - merch  */
 .tiendaMerch {
@@ -408,11 +414,16 @@ i {
 .cajaTienda2 {
   display: flex;
   justify-content: center;
+  /* display: flex;
+    justify-content: center; */
   grid-area: cajaTienda2; }
   .cajaTienda2 h3 {
     color: #ffffff;
     text-align: center;
-    font-size: 1.3rem; }
+    font-size: 1.3rem;
+    /* color: #ffffff;
+        text-align: center;
+        font-size: 1.3rem; */ }
 
 .tiendaMerch h2 {
   color: #ffffff;
@@ -576,14 +587,6 @@ i {
       padding: 0;
       width: 15rem; } }
 
-/* Colores principales 
-Negro = #000000
-Blanco = #FFFFFF
-Bordo Oscuro = #630A10
-Bordo Claro = #911F27
-Beige Claro = #FCF0C8
-Beige Oscuro = #FACE7F
-*/
 /* Quita padding, margin*/
 * {
   padding: 0;
