@@ -30,6 +30,10 @@
 .container-fluid {
   --bs-gutter-x: 0; }
 
+.navbar-toggler {
+  margin: 10px;
+  background-color: #FCF0C8; }
+
 /*? MAIN - Index */
 /* Section tour index */
 .mainIndex {
@@ -543,7 +547,8 @@ i {
     font-size: 2.5rem; }
   .cajaTienda1 img {
     flex-direction: column;
-    width: 70%; }
+    width: 70%;
+    margin-left: 5rem; }
   .cajaTienda2 {
     flex-direction: column;
     flex-wrap: wrap; }
